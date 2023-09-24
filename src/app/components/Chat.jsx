@@ -12,7 +12,7 @@ import { MyForm } from "./Form";
 
 export default function Chat() {
   return (
-    <Card className={` flex flex-col`}>
+    <Card className={`flex flex-col flex-1`}>
       <CardHeader>
         <CardTitle className={`text-[22px] flex justify-between items-center`}>
           <div>Chat with me!</div>

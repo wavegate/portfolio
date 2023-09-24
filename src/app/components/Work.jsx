@@ -16,7 +16,7 @@ import { Badge } from "@/components/ui/badge";
 
 export default function Work({ title, link, badges, description }) {
   return (
-    <Card className={``}>
+    <Card className={`w-full`}>
       <CardHeader className={`flex flex-col gap-[8px]`}>
         <CardTitle className={`flex justify-between items-center`}>
           {title}
