@@ -56,9 +56,11 @@ export default function Home() {
             Have a project you want to collaborate on, or looking for a talented
             and versatile software developer?
           </div>
-          <Button className={`font-semibold text-[20px] w-fit`}>
-            Get in touch
-          </Button>
+          <a href="#contact">
+            <Button className={`font-semibold text-[20px] w-fit`}>
+              Get in touch
+            </Button>
+          </a>
         </div>
       </section>
       <section
