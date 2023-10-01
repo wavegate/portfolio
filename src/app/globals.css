@@ -4,13 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+:root {
   scroll-behavior: smooth;
+  --primary-color: #14397d;
+  --secondary-color: #77b5d9;
+  --tertiary-color: #d7eaf3;
+  --accent-color: #f249a1;
+  color: #312d2d;
+  font-family: "Inter", sans-serif;
 }
 
 * {
-  font-family: "Inter", sans-serif;
-  color: #312d2d;
 }
 
 @layer base {
@@ -87,7 +91,17 @@ html {
 }
 
 .gradient {
-  background: linear-gradient(73deg, #4200ff -6.16%, #f00 107.24%);
+  /* background: linear-gradient(73deg, #4200ff -6.16%, #f00 107.24%); */
+  background: linear-gradient(281deg, #14397d 28.19%, #77b5d9 116.35%);
+
+  /* background: linear-gradient(275deg, #14397d 0.8%, #f249a1 100%); */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-accent {
+  background: linear-gradient(287deg, #14397d 17.27%, #f249a1 113.53%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -97,15 +111,52 @@ html {
   box-shadow: 4px 8px 12px 4px rgba(125, 157, 219, 0.25);
 }
 
-.purple-section::before {
-  content: "";
-  position: absolute;
+.primary-rectangle {
   width: 100%;
   height: 85%;
+  background: var(--primary-color);
+}
+
+.secondary-rectangle {
+  width: 30%;
+  height: 2.5%;
+  background: var(--secondary-color);
+}
+
+.tertiary-rectangle {
+  width: 15%;
+  height: 2%;
+  background: var(--tertiary-color);
+  transform: translateX(10%);
+}
+
+.secondary-rectangle--end {
+  align-self: flex-end;
+  width: 30%;
+  height: 2.5%;
+  background: var(--secondary-color);
+}
+
+.tertiary-rectangle--end {
+  align-self: flex-end;
+  width: 15%;
+  height: 2%;
+  background: var(--tertiary-color);
+  transform: translateX(-10%);
+}
+
+.skewed-background {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   top: 50%;
-  left: 0;
-  background: #3e394a;
-  z-index: -1;
   transform: skewY(-7deg) translateY(-50%);
-  background-position: center;
+  left: 0;
+  z-index: -1;
+}
+
+.primary {
+  background: var(--primary-color);
 }

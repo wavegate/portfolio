@@ -19,26 +19,29 @@ import { motion } from "framer-motion";
 export default function Work({ title, link, badges, description }) {
   const cardVariants = {
     offscreen: {
-      y: 100,
+      opacity: 0.5,
+      y: 75,
     },
     onscreen: {
+      opacity: 1,
       y: 0,
       transition: {
         type: "spring",
-        bounce: 0.4,
+        bounce: 0.6,
         duration: 0.8,
       },
     },
   };
   return (
     <motion.div
+      className={`w-full`}
       variants={cardVariants}
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true }}
     >
       <Card className={`w-full shadow-xl`}>
-        <div className={`h-[300px] w-full bg-red-50`}></div>
+        <div className={`h-[300px] w-full bg-[#d7eaf3]`}></div>
         <CardHeader className={`flex flex-col gap-[8px]`}>
           <CardTitle className={`flex justify-between items-center`}>
             {title}

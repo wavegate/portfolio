@@ -1,15 +1,11 @@
 import Logo from "./components/Logo";
-import DocuAILogo from "./components/DocuAILogo";
-import BeaconfireLogo from "./components/BeaconfireLogo";
 import Work from "./components/Work";
-import Chat from "./components/Chat";
-import { GithubIcon, LinkedinIcon, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import BoxesSection from "./components/BoxesSection";
 import FormSection from "./components/FormSection";
 
 export const metadata = {
-  title: "Frank Lee",
+  title: "Frank Lee | Web Developer",
   description: `Frank Lee's web developer portfolio`,
 };
 
@@ -20,7 +16,9 @@ export default function Home() {
         className={`w-full py-[18px] justify-center flex text-[18px] font-semibold fixed bg-white z-20`}
       >
         <div className={`w-full max-w-[1120px] flex justify-between`}>
-          <div className={`font-bold`}>Frank Lee</div>
+          <a href="#home" className={`font-bold`}>
+            Frank Lee
+          </a>
           <nav>
             <ul className={`flex gap-[40px]`}>
               <li>
@@ -64,7 +62,7 @@ export default function Home() {
         </div>
       </section>
       <section
-        className={`w-full py-[15dvh] flex justify-center bg-[#FAFAFF]`}
+        className={`w-full py-[12dvh] flex justify-center bg-[#F9F9FE] scroll-mt-[24px]`}
         id="about"
       >
         <div className={`w-full max-w-[1120px] py-[60px] px-[60px]`}>
@@ -72,40 +70,27 @@ export default function Home() {
         </div>
       </section>
       <section
-        className={`w-full py-[30dvh] flex justify-center purple-section relative z-10 bg-[#FAFAFF]`}
+        className={`w-full pt-[20dvh] pb-[28dvh] flex justify-center relative z-10 bg-[#F9F9FE] -scroll-mt-[24px]`}
         id="projects"
       >
+        <div className={`skewed-background`}>
+          <div className={`tertiary-rectangle`}></div>
+          <div className={`secondary-rectangle`}></div>
+          <div className={`primary-rectangle`}></div>
+          <div className={`secondary-rectangle--end`}></div>
+          <div className={`tertiary-rectangle--end`}></div>
+        </div>
         <div
           className={`w-full max-w-[1120px] flex flex-col gap-[64px] items-center`}
         >
-          <div className={`flex gap-[40px]`}>
+          <div className={`grid grid-cols-2 gap-[40px]`}>
             <div className={`flex flex-col gap-[48px] items-center`}>
               <h2
                 className={`font-semibold text-[48px] leading-[56px] mt-[32px] text-white`}
               >
                 Projects
               </h2>
-              <Work
-                title={
-                  <div className={`flex gap-[12px] items-center`}>
-                    <Logo />
-                    <div className={`text-[20px]`}>Project 1</div>
-                  </div>
-                }
-                link={`https://mykaraoke.vercel.app`}
-                badges={[
-                  `React`,
-                  `Storybook`,
-                  `Puppeteer`,
-                  `Express`,
-                  `PostgreSQL`,
-                  `OpenAI`,
-                  `EC2`,
-                  `RDS`,
-                  `S3`,
-                ]}
-                description={`Data warehouse for job market intelligence.`}
-              />
+
               <Work
                 title={
                   <div className={`flex gap-[12px] items-center`}>
@@ -133,50 +118,19 @@ export default function Home() {
                 title={
                   <div className={`flex gap-[12px] items-center`}>
                     <Logo />
-                    <div className={`text-[18px]`}>Argos Jobs</div>
+                    <div className={`text-[18px]`}>TBD</div>
                   </div>
                 }
                 link={`https://mykaraoke.vercel.app`}
-                badges={[
-                  `React`,
-                  `Storybook`,
-                  `Puppeteer`,
-                  `Express`,
-                  `PostgreSQL`,
-                  `OpenAI`,
-                  `EC2`,
-                  `RDS`,
-                  `S3`,
-                ]}
-                description={`Data warehouse for job market intelligence.`}
-              />
-              <Work
-                title={
-                  <div className={`flex gap-[12px] items-center`}>
-                    <Logo />
-                    <div className={`text-[18px]`}>Argos Jobs</div>
-                  </div>
-                }
-                link={`https://mykaraoke.vercel.app`}
-                badges={[
-                  `React`,
-                  `Storybook`,
-                  `Puppeteer`,
-                  `Express`,
-                  `PostgreSQL`,
-                  `OpenAI`,
-                  `EC2`,
-                  `RDS`,
-                  `S3`,
-                ]}
-                description={`Data warehouse for job market intelligence.`}
+                badges={[`React`]}
+                description={`TBD`}
               />
             </div>
           </div>
         </div>
       </section>
       <section
-        className={`w-full py-[12dvh] flex justify-center bg-[#FAFAFF]`}
+        className={`w-full pt-[6dvh] pb-[12dvh] flex justify-center bg-[#F9F9FE]`}
         id="contact"
       >
         <div
@@ -193,10 +147,18 @@ export default function Home() {
         <div className={`w-full max-w-[720px] flex gap-[32px] justify-between`}>
           <div>© 2023 Frank Lee</div>
           <ul className={`grid grid-cols-4 gap-[32px] font-semibold`}>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
       </footer>

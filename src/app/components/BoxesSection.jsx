@@ -82,8 +82,8 @@ export default function BoxesSection() {
             y2="516.351"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#4200FF" />
-            <stop offset="1" stopColor="#FF0000" />
+            <stop stopColor="#14397d" />
+            <stop offset="1" stopColor="#d7eaf3" />
           </linearGradient>
         </defs>
       </motion.svg>
@@ -119,8 +119,8 @@ export default function BoxesSection() {
             y2="-1.17979"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#4200FF" />
-            <stop offset="1" stopColor="#FF0000" />
+            <stop stopColor="#14397d" />
+            <stop offset="1" stopColor="#d7eaf3" />
           </linearGradient>
         </defs>
       </motion.svg>
@@ -156,8 +156,8 @@ export default function BoxesSection() {
             y2="426.936"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#4200FF" />
-            <stop offset="1" stopColor="#FF0000" />
+            <stop stopColor="#14397d" />
+            <stop offset="1" stopColor="#d7eaf3" />
           </linearGradient>
         </defs>
       </motion.svg>
@@ -193,8 +193,8 @@ export default function BoxesSection() {
             y2="-176.712"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#4200FF" />
-            <stop offset="1" stopColor="#FF0000" />
+            <stop stopColor="#14397d" />
+            <stop offset="1" stopColor="#d7eaf3" />
           </linearGradient>
         </defs>
       </motion.svg>
@@ -230,8 +230,8 @@ export default function BoxesSection() {
             y2="3.17978"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#4200FF" />
-            <stop offset="1" stopColor="#FF0000" />
+            <stop stopColor="#14397d" />
+            <stop offset="1" stopColor="#d7eaf3" />
           </linearGradient>
         </defs>
       </motion.svg>
@@ -267,8 +267,8 @@ export default function BoxesSection() {
             y2="-168.491"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#4200FF" />
-            <stop offset="1" stopColor="#FF0000" />
+            <stop stopColor="#14397d" />
+            <stop offset="1" stopColor="#d7eaf3" />
           </linearGradient>
         </defs>
       </motion.svg>
@@ -276,10 +276,12 @@ export default function BoxesSection() {
       <h2 className={`font-semibold text-[48px] text-center`}>About Me</h2>
       <p className={`text-[20px] leading-[36px]`}>
         I currently specialize in{" "}
-        <span className={`gradient`}>frontend development</span>, but my passion
-        as a hobbyist lies in building websites and web applications from
-        scratch, from idea conception, market analysis, visual design, system
-        design, construction, to testing and maintenance.
+        <span className={`gradient-accent font-bold`}>
+          frontend development
+        </span>
+        , but my passion as a hobbyist lies in building websites and web
+        applications from idea conception, market analysis, product design,
+        system design, construction, to testing and maintenance.
       </p>
     </div>
   );
