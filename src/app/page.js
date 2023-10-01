@@ -52,12 +52,14 @@ export default function Home() {
           >
             Web Developer
           </h1>
-          <div className={`text-[20px] font-medium text-center leading-[36px]`}>
+          <div
+            className={`text-[20px] font-regular text-center leading-[36px]`}
+          >
             Have a project you want to collaborate on, or looking for a talented
             and versatile software developer?
           </div>
           <a href="#contact">
-            <Button className={`font-semibold text-[20px] w-fit`}>
+            <Button className={`font-medium text-[20px] w-fit`}>
               Get in touch
             </Button>
           </a>

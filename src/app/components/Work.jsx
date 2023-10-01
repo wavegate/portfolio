@@ -40,8 +40,8 @@ export default function Work({ title, link, badges, description }) {
       whileInView="onscreen"
       viewport={{ once: true }}
     >
-      <Card className={`w-full shadow-xl`}>
-        <div className={`h-[300px] w-full bg-[#d7eaf3]`}></div>
+      <Card className={`w-full shadow-xl rounded-[8px]`}>
+        <div className={`h-[300px] w-full bg-[#d7eaf3] rounded-t-[8px]`}></div>
         <CardHeader className={`flex flex-col gap-[8px]`}>
           <CardTitle className={`flex justify-between items-center`}>
             {title}
@@ -73,7 +73,7 @@ export default function Work({ title, link, badges, description }) {
               </Tooltip>
             </TooltipProvider>
           </CardTitle>
-          <CardDescription className={`text-[20px] leading-[36px]`}>
+          <CardDescription className={`text-[18px] leading-[36px]`}>
             {description}
           </CardDescription>
         </CardHeader>
