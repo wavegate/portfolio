@@ -86,7 +86,7 @@ export default function Home() {
           <div className={`grid grid-cols-2 gap-[40px]`}>
             <div className={`flex flex-col gap-[48px] items-center`}>
               <h2
-                className={`font-semibold text-[48px] leading-[56px] mt-[32px] text-white`}
+                className={`font-semibold text-[48px] leading-[56px] mt-[32px] text-slate-50`}
               >
                 Projects
               </h2>
@@ -146,7 +146,7 @@ export default function Home() {
       <footer className={`w-full py-[6dvh] flex justify-center`}>
         <div className={`w-full max-w-[720px] flex gap-[32px] justify-between`}>
           <div>© 2023 Frank Lee</div>
-          <ul className={`grid grid-cols-4 gap-[32px] font-semibold`}>
+          <ul className={`grid grid-cols-4 gap-[32px] font-medium`}>
             <li>
               <a href="#home">Home</a>
             </li>

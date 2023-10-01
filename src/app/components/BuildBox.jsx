@@ -16,7 +16,7 @@ export default function BuildBox({ logo, text, className, delay }) {
         repeatDelay: 16,
         delay: delay,
       }}
-      className={`z-10 w-[120px] h-[120px] flex flex-col gap-[8px] rounded-[16px] blue-shadow bg-white justify-center items-center absolute ${className}`}
+      className={`z-10 w-[120px] h-[120px] flex flex-col gap-[8px] rounded-[8px] blue-shadow bg-white justify-center items-center absolute ${className}`}
     >
       <div className={`w-[60px] h-[60px] flex items-center justiy-center`}>
         {logo}

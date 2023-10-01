@@ -108,7 +108,7 @@
 }
 
 .blue-shadow {
-  box-shadow: 4px 8px 12px 4px rgba(125, 157, 219, 0.25);
+  box-shadow: 4px 8px 12px 0px rgba(125, 157, 219, 0.25);
 }
 
 .primary-rectangle {
