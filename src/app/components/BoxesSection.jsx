@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 export default function BoxesSection() {
   return (
     <div
-      className={`flex flex-col items-center gap-[16px] relative w-full py-[150px] px-[160px]`}
+      className={`flex flex-col items-center gap-[16px] relative w-full py-[140px] px-[160px]`}
     >
       <BuildBox
         logo={<FigmaLogo />}
@@ -279,9 +279,21 @@ export default function BoxesSection() {
         <span className={`gradient-accent font-bold`}>
           frontend development
         </span>
-        , but my passion as a hobbyist lies in building websites and web
-        applications from idea conception, market analysis, product design,
-        system design, construction, to testing and maintenance.
+        , but my passion lies in building full-stack websites from initial idea
+        to product delivery.
+      </p>
+      <p className={`text-[20px] leading-[36px]`}>
+        My primary tech stack includes{" "}
+        <span className={`font-medium`}>HTML/CSS</span>,{" "}
+        <span className={`font-medium`}>TypeScript</span>,{" "}
+        <span className={`font-medium`}>React.js</span>,{" "}
+        <span className={`font-medium`}>Redux</span>,{" "}
+        <span className={`font-medium`}>Node.js</span>,{" "}
+        <span className={`font-medium`}>Express.js</span>,{" "}
+        <span className={`font-medium`}>Python</span>,{" "}
+        <span className={`font-medium`}>PostgreSQL</span>,{" "}
+        <span className={`font-medium`}>Docker</span>, and{" "}
+        <span className={`font-medium`}>AWS</span>.
       </p>
     </div>
   );

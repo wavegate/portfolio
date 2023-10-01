@@ -95,10 +95,10 @@ export default function Home() {
                 title={
                   <div className={`flex gap-[12px] items-center`}>
                     <Logo />
-                    <div className={`text-[18px]`}>Argos Jobs</div>
+                    <div className={`text-[18px]`}>Coming soon...</div>
                   </div>
                 }
-                link={`https://mykaraoke.vercel.app`}
+                link={``}
                 badges={[
                   `React`,
                   `Storybook`,
@@ -118,12 +118,12 @@ export default function Home() {
                 title={
                   <div className={`flex gap-[12px] items-center`}>
                     <Logo />
-                    <div className={`text-[18px]`}>TBD</div>
+                    <div className={`text-[18px]`}>Coming soon...</div>
                   </div>
                 }
                 link={`https://mykaraoke.vercel.app`}
                 badges={[`React`]}
-                description={`TBD`}
+                description={`Coming soon...`}
               />
             </div>
           </div>

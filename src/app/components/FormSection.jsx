@@ -138,15 +138,19 @@ export default function FormSection() {
               </a>
             </li>
             <li>
-              <Button variant="outline" className={`text-[18px] font-medium`}>
-                <a
-                  href="/Frank_Lee_Resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+              <a
+                href="/Frank_Lee_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  type="button"
+                  variant="outline"
+                  className={`text-[18px] font-medium`}
                 >
                   Resume
-                </a>
-              </Button>
+                </Button>
+              </a>
             </li>
           </ul>
         </div>
