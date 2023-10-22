@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 export default function BoxesSection() {
   return (
     <div
-      className={`flex flex-col items-center gap-[16px] relative w-full py-[140px] max-[500px]:py-[100px] max-lg:px-[60px] max-lg:py-[170px] px-[160px] max-[500px]:px-[6px]`}
+      className={`flex flex-col items-center gap-[16px] relative w-full py-[140px] max-[500px]:py-[100px] max-lg:px-[60px] max-lg:py-[170px] px-[160px] max-[500px]:px-0`}
     >
       <BuildBox
         logo={<FigmaLogo />}
@@ -278,7 +278,9 @@ export default function BoxesSection() {
       >
         About Me
       </h2>
-      <p className={`text-[20px] leading-[36px] max-[500px]:text-[16px]`}>
+      <p
+        className={`text-[20px] leading-[36px] max-[500px]:text-[16px] max-[500px]:leading-[30px]`}
+      >
         I currently specialize in{" "}
         <span className={`gradient-accent font-bold`}>
           frontend development
@@ -286,7 +288,9 @@ export default function BoxesSection() {
         , but my passion lies in building full-stack websites from initial idea
         to product delivery.
       </p>
-      <p className={`text-[20px] leading-[36px] max-[500px]:text-[16px]`}>
+      <p
+        className={`text-[20px] leading-[36px] max-[500px]:text-[16px] max-[500px]:leading-[30px]`}
+      >
         My primary tech stack includes{" "}
         <span className={`font-medium`}>HTML/CSS</span>,{" "}
         <span className={`font-medium`}>TypeScript</span>,{" "}

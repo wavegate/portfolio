@@ -51,7 +51,7 @@ export default function Home() {
         id="about"
       >
         <div
-          className={`w-full max-w-[1120px] py-[60px] px-[60px] max-lg:max-w-[768px]`}
+          className={`w-full max-w-[1120px] py-[60px] px-[60px] max-lg:max-w-[768px] max-[500px]:px-[30px]`}
         >
           <BoxesSection />
         </div>
@@ -126,7 +126,7 @@ export default function Home() {
         id="contact"
       >
         <div
-          className={`w-full max-w-[720px] flex flex-col gap-[64px] items-center max-[500px]:max-w-[368px] max-[500px]:gap-[32px]`}
+          className={`w-full max-w-[720px] flex flex-col gap-[64px] items-center max-[500px]:max-w-[368px] max-[500px]:gap-[32px] px-[12px]`}
         >
           <h2
             className={`font-semibold text-[48px] leading-[56px] max-[500px]:text-[36px]`}
