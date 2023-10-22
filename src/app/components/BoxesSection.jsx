@@ -12,46 +12,46 @@ import { motion } from "framer-motion";
 export default function BoxesSection() {
   return (
     <div
-      className={`flex flex-col items-center gap-[16px] relative w-full py-[140px] px-[160px]`}
+      className={`flex flex-col items-center gap-[16px] relative w-full py-[140px] max-[500px]:py-[100px] max-lg:px-[60px] max-lg:py-[170px] px-[160px] max-[500px]:px-[6px]`}
     >
       <BuildBox
         logo={<FigmaLogo />}
         text="Design"
-        className={`top-1/2 left-0`}
+        className={`top-1/2 left-0 max-lg:top-0`}
         delay={0}
       />
       <BuildBox
         logo={<ReactLogo />}
         text="Frontend"
-        className={`top-0 left-1/3`}
+        className={`top-0 left-1/3 max-lg:left-1/2 max-lg:-translate-x-1/2`}
         delay={3}
       />
       <BuildBox
         logo={<NodeLogo />}
         text="Backend"
-        className={`top-0 left-2/3`}
+        className={`top-0 left-2/3 max-lg:right-0 max-lg:left-full max-lg:-translate-x-full`}
         delay={6}
       />
       <BuildBox
         logo={<EC2Logo />}
         text="Deployment"
-        className={`top-1/2 left-full`}
+        className={`top-1/2 left-full max-lg:top-full max-lg:-translate-y-full max-lg:-translate-x-full`}
         delay={9}
       />
       <BuildBox
         logo={<JestLogo />}
         text="Testing"
-        className={`top-full left-2/3`}
+        className={`top-full left-2/3 max-lg:-translate-y-full max-lg:left-1/2 max-lg:-translate-x-1/2`}
         delay={12}
       />
       <BuildBox
         logo={<OpenAILogo />}
         text="AI/ML"
-        className={`top-full left-1/3`}
+        className={`top-full left-1/3 max-lg:-translate-y-full max-lg:left-0`}
         delay={15}
       />
       <motion.svg
-        className={`absolute left-0 top-0`}
+        className={`absolute left-0 top-0 max-lg:hidden`}
         id="line"
         xmlns="http://www.w3.org/2000/svg"
         width="272"
@@ -89,7 +89,7 @@ export default function BoxesSection() {
       </motion.svg>
 
       <motion.svg
-        className={`absolute top-0`}
+        className={`absolute top-0 max-lg:hidden`}
         xmlns="http://www.w3.org/2000/svg"
         width="213"
         height="2"
@@ -127,7 +127,7 @@ export default function BoxesSection() {
 
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
-        className={`absolute top-0 left-full -translate-x-full`}
+        className={`absolute top-0 left-full -translate-x-full max-lg:hidden`}
         width="273"
         height="206"
         viewBox="0 0 273 206"
@@ -168,7 +168,7 @@ export default function BoxesSection() {
         height="206"
         viewBox="0 0 274 206"
         fill="none"
-        className={`absolute left-full -translate-x-full top-full -translate-y-full`}
+        className={`absolute left-full -translate-x-full top-full -translate-y-full max-lg:hidden`}
       >
         <motion.path
           animate={{ pathLength: [0, 1, 1], pathOffset: [0, 0, 1] }}
@@ -200,7 +200,7 @@ export default function BoxesSection() {
       </motion.svg>
 
       <motion.svg
-        className={`absolute top-full -translate-y-full`}
+        className={`absolute top-full -translate-y-full max-lg:hidden`}
         xmlns="http://www.w3.org/2000/svg"
         width="213"
         height="2"
@@ -237,7 +237,7 @@ export default function BoxesSection() {
       </motion.svg>
 
       <motion.svg
-        className={`absolute top-full -translate-y-full left-0`}
+        className={`absolute top-full -translate-y-full left-0 max-lg:hidden`}
         xmlns="http://www.w3.org/2000/svg"
         width="273"
         height="206"
@@ -273,8 +273,12 @@ export default function BoxesSection() {
         </defs>
       </motion.svg>
 
-      <h2 className={`font-semibold text-[48px] text-center`}>About Me</h2>
-      <p className={`text-[20px] leading-[36px]`}>
+      <h2
+        className={`font-semibold text-[48px] text-center max-[500px]:text-[36px]`}
+      >
+        About Me
+      </h2>
+      <p className={`text-[20px] leading-[36px] max-[500px]:text-[16px]`}>
         I currently specialize in{" "}
         <span className={`gradient-accent font-bold`}>
           frontend development
@@ -282,7 +286,7 @@ export default function BoxesSection() {
         , but my passion lies in building full-stack websites from initial idea
         to product delivery.
       </p>
-      <p className={`text-[20px] leading-[36px]`}>
+      <p className={`text-[20px] leading-[36px] max-[500px]:text-[16px]`}>
         My primary tech stack includes{" "}
         <span className={`font-medium`}>HTML/CSS</span>,{" "}
         <span className={`font-medium`}>TypeScript</span>,{" "}

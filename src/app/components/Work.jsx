@@ -13,11 +13,16 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
-export default function Work({ title, link, badges, description }) {
+export default function Work({ title, image, link, badges, description }) {
   return (
     <Card className={`w-full shadow-xl rounded-[8px]`}>
-      <div className={`h-[300px] w-full bg-[#d7eaf3] rounded-t-[8px]`}></div>
+      <div
+        className={`h-[300px] max-[500px]:h-[180px] w-full bg-[#d7eaf3] rounded-t-[8px] relative overflow-hidden`}
+      >
+        <Image src={image} alt="Argos Jobs" fill className={`object-contain`} />
+      </div>
       <CardHeader className={`flex flex-col gap-[8px]`}>
         <CardTitle className={`flex justify-between items-center`}>
           {title}
@@ -49,7 +54,9 @@ export default function Work({ title, link, badges, description }) {
             </Tooltip>
           </TooltipProvider>
         </CardTitle>
-        <CardDescription className={`text-[18px] leading-[36px]`}>
+        <CardDescription
+          className={`text-[18px] leading-[36px] max-[500px]:text-[16px] max-[500px]:leading-[30px]`}
+        >
           {description}
         </CardDescription>
       </CardHeader>
