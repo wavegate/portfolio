@@ -210,7 +210,7 @@ export default function FormSection() {
                 </li>
                 <li>
                   <a
-                    href="/Frank_Lee_resume.pdf"
+                    href="/Frank_Lee_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
