@@ -65,7 +65,7 @@ export default function FormSection() {
           </div>
         ) : (
           <div className={`text-[18px]`}>
-            Thanks! I'll get back to you soon.
+            Thanks! I will get back to you soon.
           </div>
         )
       ) : (
