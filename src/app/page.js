@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import BoxesSection from "./components/BoxesSection";
 import FormSection from "./components/FormSection";
 import Header from "./components/Header";
+import ResMatchLogo from "./components/ResMatchLogo";
 
 export const metadata = {
   title: "Frank Lee | Web Developer",
@@ -19,7 +20,7 @@ export default function Home() {
         id="home"
       >
         <div
-          className={`flex flex-col gap-[32px] max-w-[570px] items-center max-[500px]:gap-[18px]`}
+          className={`flex flex-col gap-[32px] max-w-[700px] items-center max-[500px]:gap-[18px]`}
         >
           <h1
             className={`text-[64px] font-semibold text-center leading-[64px] max-[500px]:text-[48px]`}
@@ -29,7 +30,7 @@ export default function Home() {
           <h1
             className={`text-[64px] font-semibold gradient text-center leading-[64px] max-[500px]:text-[48px]`}
           >
-            Web Developer
+            AI + Web Developer
           </h1>
           <div
             className={`text-[20px] font-regular text-center leading-[36px] max-[500px]:text-[16px] max-[500px]:leading-[30px]`}
@@ -80,7 +81,18 @@ export default function Home() {
               >
                 Projects
               </h2>
-
+              <Work
+              image="/resmatch.png"
+                title={
+                  <div className={`flex gap-[12px] items-center`}>
+                    <ResMatchLogo />
+                    <div className={`text-[18px]`}>ResMatch</div>
+                  </div>
+                }
+                link={`https://residencymatch.net`}
+                badges={[`React`, `Node.js`, `PostgreSQL`,`Prisma`,`Docker`, `OpenAI`]}
+                description={`Medical residency community platform used by thousands of applicants.`}
+              />
               <Work
                 image="/argos_jobs_3.png"
                 title={
@@ -104,20 +116,10 @@ export default function Home() {
                 ]}
                 description={`Craft the perfect resume, for web developers, by web developers.`}
               />
+             
             </div>
-            {/* <div className={`flex flex-col gap-[40px]`}>
-              <Work
-                title={
-                  <div className={`flex gap-[12px] items-center`}>
-                    <Logo />
-                    <div className={`text-[18px]`}>Coming soon...</div>
-                  </div>
-                }
-                link={``}
-                badges={[`React`]}
-                description={`Coming soon...`}
-              />
-            </div> */}
+       
+  
           </div>
         </div>
       </section>
