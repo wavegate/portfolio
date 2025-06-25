@@ -55,7 +55,7 @@ export default function Work({ title, image, link, badges, description }) {
           </TooltipProvider>
         </CardTitle>
         <CardDescription
-          className={`text-[18px] leading-[36px] max-[500px]:text-[16px] max-[500px]:leading-[30px]`}
+          className={`text-[18px] max-[500px]:text-[16px] `}
         >
           {description}
         </CardDescription>

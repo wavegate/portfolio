@@ -58,7 +58,7 @@ export default function Home() {
         </div>
       </section>
       <section
-        className={`w-full pt-[20dvh] pb-[28dvh] flex justify-center relative z-10 bg-[#F9F9FE] -scroll-mt-[24px] max-lg:scroll-mt-[64px] max-lg:py-[10dvh] max-lg:pb-[20dvh]`}
+        className={`w-full pt-[20dvh] pb-[28dvh] flex justify-center relative z-10 bg-[#F9F9FE] -scroll-mt-[24px] max-lg:scroll-mt-[64px] max-lg:py-[10dvh] max-lg:pb-[30dvh]`}
         id="projects"
       >
         <div className={`skewed-background`}>
